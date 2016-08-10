@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="353" id="KGk-i7-Jjw" customClass="ExpandableTableViewCell" customModule="ExpandableTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="352.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOG-rB-GPS">
+                        <rect key="frame" x="8" y="18" width="304" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8dv-Sq-V6Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXZ-by-rFU">
+                        <rect key="frame" x="8" y="48" width="304" height="286.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="286.5" id="yMg-Y0-aox"/>
+                        </constraints>
+                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gOG-rB-GPS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="0ew-LN-Rra"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gOG-rB-GPS" secondAttribute="trailing" id="F96-U9-dkB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VXZ-by-rFU" secondAttribute="trailing" id="Osk-z1-9U9"/>
+                    <constraint firstItem="VXZ-by-rFU" firstAttribute="top" secondItem="gOG-rB-GPS" secondAttribute="bottom" id="hUl-GO-vGY"/>
+                    <constraint firstItem="VXZ-by-rFU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jhX-LN-i5c"/>
+                    <constraint firstItem="gOG-rB-GPS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="mVX-Wb-utN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VXZ-by-rFU" secondAttribute="bottom" constant="10" id="vvC-IA-jwG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="VXZ-by-rFU" id="ATY-Fd-PUD"/>
+                <outlet property="detailLabelHeightConstraint" destination="yMg-Y0-aox" id="PGc-Me-Cuk"/>
+                <outlet property="titleLabel" destination="gOG-rB-GPS" id="WHG-2Z-GwE"/>
+            </connections>
+            <point key="canvasLocation" x="251" y="323.5"/>
+        </tableViewCell>
+    </objects>
+</document>
